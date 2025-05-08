@@ -43,6 +43,7 @@ client.on('auth_failure', msg => {
 
 client.on('qr', (qr) => {
     qrcode.generate(qr, { small: true });
+    console.log('\n🔗 QR Code string:\n' + qr);
 });
 
 client.on('ready', () => {
